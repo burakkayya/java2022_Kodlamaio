@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "gehFNOwhlxbRYm1EC01+YMBSOC6absAynZuhhVu/u0oMFBvjfAFiLOeCSe2V46ZB19CRHPaBgqriTVHJ7SunHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ebkay\\source\\repos\\MyFinalProject\\ConsoleUI\\ConsoleUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ebkay\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
