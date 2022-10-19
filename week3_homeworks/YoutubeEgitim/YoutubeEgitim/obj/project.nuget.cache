@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "joefnXHimHiVKKuHXaPoovOvuGgG3fZ3twsPt6UuZk4A/xtOLFFURQ6QlERklCNinM/RRAYDveh1lNhQOzN5tA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ebkay\\source\\repos\\YoutubeEgitim\\YoutubeEgitim\\YoutubeEgitim.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ebkay\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
