@@ -22,7 +22,7 @@ import kodlama.io.Kodlama.io.Devs.entities.concretes.Technology;
 public class LanguageManager implements LanguageService {
 
 	private LanguageRepository languageRepository;
-	TechnologyRepository technologyRepository;
+	private TechnologyRepository technologyRepository;
 
 	@Autowired
 	public LanguageManager(LanguageRepository languageRepository, TechnologyRepository technologyRepository) {
@@ -52,7 +52,7 @@ public class LanguageManager implements LanguageService {
 
 	@Override
 	public void delete(DeleteLanguageRequest deleteLanguageRequest) {
-		Language language = languageRepository.getById(deleteLanguageRequest.getId());
+		Language language = languageRepository.findById(deleteLanguageRequest.getId()).get();
 		technologyRepository.deleteAll(language.getTechnologies());
 		languageRepository.delete(language);
 
@@ -60,7 +60,7 @@ public class LanguageManager implements LanguageService {
 
 	@Override
 	public void update(UpdateLanguageRequest updateLanguageRequest) {
-		Language language = languageRepository.getById(updateLanguageRequest.getId());
+		Language language = languageRepository.findById(updateLanguageRequest.getId()).get();
 		language.setName(updateLanguageRequest.getName());
 		languageRepository.save(language);
 
@@ -77,7 +77,6 @@ public class LanguageManager implements LanguageService {
 			GetAllLanguageResponse responseItem = new GetAllLanguageResponse();
 			for (Technology technology : technologies) {
 				if (technology.getLanguage().getId() == language.getId()) {
-					System.out.println("Buradayım");
 					if (!language.getTechnologies().contains(technology)) {
 						language.getTechnologies().add(technology);
 					}

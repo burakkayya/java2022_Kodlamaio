@@ -21,8 +21,8 @@ import kodlama.io.Kodlama.io.Devs.entities.concretes.Technology;
 @Service
 public class TechnologyManager implements TechnologyService {
 
-	TechnologyRepository technologyRepository;
-	LanguageRepository languageRepository;
+	private TechnologyRepository technologyRepository;
+	private LanguageRepository languageRepository;
 
 	@Autowired
 	public TechnologyManager(TechnologyRepository technologyRepository, LanguageRepository languageRepository) {
